@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predicciones Mundial 2026</title>
+  <meta name="description"
+    content="Simula y predice el Mundial 2026. Sistema de puntos, bracket interactivo y ranking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="login-trophy">⚽</div>
+      <h1>Predicciones <span class="accent">Mundial 2026</span></h1>
+      <p class="login-subtitle">Ingresa tu nombre para guardar y rastrear tus predicciones</p>
+      <input type="text" id="login-name" placeholder="Tu nombre" class="input-text login-input" autocomplete="off">
+      <button id="btn-login" class="btn btn-gold">🚀 Ingresar</button>
+      <div id="login-error" class="error-msg" style="display:none"></div>
+      <div class="login-hint">Si ya ingresaste antes, usa el mismo nombre para cargar tus datos.</div>
+    </div>
+  </div>
+
+  <!-- MAIN APP (hidden until login) -->
+  <div id="main-app" style="display:none">
+
+    <header id="main-header">
+      <div class="header-left">
+        <span class="trophy">⚽</span>
+        <h1>Predicciones <span class="accent">Mundial 2026</span></h1>
+      </div>
+      <div class="header-center">
+        <nav class="nav-tabs">
+          <button class="nav-btn active" data-tab="predicciones">Mis Predicciones</button>
+          <button class="nav-btn" data-tab="resultados">Resultados</button>
+          <button class="nav-btn" data-tab="ranking">Ranking</button>
+        </nav>
+      </div>
+      <div class="header-right">
+        <span id="user-badge" class="user-badge">👤 —</span>
+        <button id="btn-logout" class="btn btn-outline btn-sm">Salir</button>
+      </div>
+    </header>
+
+    <!-- TAB: PREDICCIONES -->
+    <section id="tab-predicciones" class="tab-content active">
+      <div class="glass-card">
+        <h2>1. Fase de Grupos</h2>
+        <p class="subtitle">Haz clic en los equipos para asignar 1°, 2° y 3° de cada grupo</p>
+        <div id="grupos-grid" class="grupos-grid"></div>
+      </div>
+
+      <div class="glass-card">
+        <h2>2. Mejores Terceros</h2>
+        <p class="subtitle">Selecciona los 8 grupos que aportan mejores terceros (<span id="thirds-count">0</span>/8)
+        </p>
+        <div id="thirds-selector" class="thirds-grid"></div>
+      </div>
+
+      <div class="glass-card">
+        <h2>3. Fase Eliminatoria</h2>
+        <p class="subtitle">Genera el bracket y haz clic en el equipo ganador de cada llave</p>
+        <button id="btn-generate" class="btn btn-primary">⚽ Generar Bracket de Eliminatorias</button>
+        <div id="error-msg" class="error-msg" style="display:none"></div>
+      </div>
+
+      <div id="bracket-inline" style="display:none">
+        <div class="bracket-scroll">
+          <div class="bracket-inner">
+            <div class="round-labels" id="round-labels"></div>
+            <div class="bracket" id="bracket"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card" style="text-align:center">
+        <button id="btn-save" class="btn btn-gold">💾 Guardar Mi Predicción</button>
+        <div id="save-msg" class="save-msg" style="display:none"></div>
+      </div>
+
+      <div class="glass-card score-legend">
+        <h3>📊 Sistema de Puntos</h3>
+        <div class="score-grid">
+          <div class="score-item"><span class="pts">1 pt</span> Posición correcta en grupo</div>
+          <div class="score-item"><span class="pts">1 pt</span> Mejor tercero acertado</div>
+          <div class="score-item"><span class="pts">1 pt</span> Pasa a Octavos</div>
+          <div class="score-item"><span class="pts">2 pts</span> Pasa a Cuartos</div>
+          <div class="score-item"><span class="pts">3 pts</span> Pasa a Semifinal</div>
+          <div class="score-item"><span class="pts">5 pts</span> Pasa a la Final</div>
+          <div class="score-item"><span class="pts gold">10 pts</span> Campeón</div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <!-- TAB: RANKING -->
+    <section id="tab-ranking" class="tab-content">
+      <div class="glass-card">
+        <h2>🏆 Tabla de Posiciones</h2>
+        <div id="ranking-table"></div>
+        <p class="note">Los puntos se actualizan cuando se ingresan los resultados reales del mundial.</p>
+      </div>
+    </section>
+
+    <!-- TAB: RESULTADOS EN VIVO -->
+    <section id="tab-resultados" class="tab-content">
+      <div class="glass-card">
+        <div class="results-header">
+          <div>
+            <h2>📺 Resultados del Mundial</h2>
+            <p class="subtitle" id="results-status">Cargando partidos...</p>
+          </div>
+          <div style="display:flex; gap:10px; align-items:center;">
+            <div class="view-toggles">
+              <button class="btn btn-sm btn-outline active" id="btn-view-groups">Por Grupos</button>
+              <button class="btn btn-sm btn-outline" id="btn-view-dates">Por Fechas</button>
+            </div>
+            <button id="btn-sync" class="btn btn-primary btn-sm">🔄 Actualizar</button>
+          </div>
+        </div>
+      </div>
+      <div id="results-container"></div>
+    </section>
+
+  </div><!-- /main-app -->
+
+  <script src="app.js"></script>
+</body>
+
+</html>

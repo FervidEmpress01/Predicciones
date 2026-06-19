@@ -1,0 +1,33 @@
+{
+  "activeMatchId": 1,
+  "matches": [
+    {
+      "id": 1,
+      "teamA": "Ecuador",
+      "teamB": "Costa de Marfil",
+      "date": "2026-06-14",
+      "scoreA": null,
+      "scoreB": null,
+      "finished": false
+    },
+    {
+      "id": 2,
+      "teamA": "Curazao",
+      "teamB": "Ecuador",
+      "date": "2026-06-19",
+      "scoreA": null,
+      "scoreB": null,
+      "finished": false
+    },
+    {
+      "id": 3,
+      "teamA": "Alemania",
+      "teamB": "Ecuador",
+      "date": "2026-06-24",
+      "scoreA": null,
+      "scoreB": null,
+      "finished": false
+    }
+  ],
+  "predictions": []
+}

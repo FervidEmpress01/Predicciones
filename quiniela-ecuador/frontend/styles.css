@@ -1,0 +1,242 @@
+:root {
+  --bg-color: #0b1120;
+  --card-bg: rgba(15, 23, 42, 0.6);
+  --card-border: rgba(255, 209, 0, 0.2);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --primary: #FFD100; /* Amarillo Ecuador */
+  --primary-hover: #e6bc00;
+  --secondary: #002366; /* Azul Ecuador */
+  --accent: #ED1C24; /* Rojo Ecuador */
+  --success: #10b981;
+  --error: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(0, 35, 102, 0.4) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(255, 209, 0, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(237, 28, 36, 0.15) 0px, transparent 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Glassmorphism */
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Typography */
+h1, h2, h3 { font-weight: 800; margin-bottom: 0.5rem; }
+h1 { font-size: 2.5rem; }
+.accent { color: var(--primary); }
+.subtitle { color: var(--text-muted); margin-bottom: 1.5rem; }
+
+/* Inputs & Buttons */
+.input-text, .score-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.3);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s;
+}
+.input-text:focus, .score-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(255, 209, 0, 0.2);
+}
+.score-input {
+  width: 80px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-primary {
+  background: var(--primary);
+  color: #000;
+}
+.btn-primary:hover {
+  background: var(--primary-hover);
+  transform: translateY(-2px);
+}
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--text-muted);
+  color: var(--text-muted);
+}
+.btn-outline:hover {
+  background: rgba(255,255,255,0.05);
+  color: white;
+}
+.btn-sm { padding: 6px 12px; font-size: 0.875rem; }
+.btn-large { width: 100%; padding: 16px; font-size: 1.2rem; margin-top: 1.5rem; }
+
+/* Login Screen */
+.login-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.login-card .logo { font-size: 4rem; margin-bottom: 1rem; }
+.login-card input { margin-bottom: 1rem; text-align: center; }
+.login-card button { width: 100%; }
+
+/* Main Header */
+#main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.header-left { display: flex; align-items: center; gap: 0.5rem; }
+.logo-small { font-size: 1.5rem; }
+.nav-tabs { display: flex; gap: 0.5rem; }
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+.nav-btn:hover { color: white; background: rgba(255,255,255,0.05); }
+.nav-btn.active { color: var(--primary); background: rgba(255, 209, 0, 0.1); }
+.header-right { display: flex; align-items: center; gap: 1rem; }
+.user-badge { font-weight: 600; color: var(--primary); }
+
+/* Tabs */
+.tab-content {
+  display: none;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.tab-content.active { display: block; animation: fadeIn 0.3s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Scoreboard */
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: rgba(0,0,0,0.2);
+  border-radius: 12px;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+.flag {
+  font-size: 4rem;
+  line-height: 1;
+}
+.team-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.vs {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  padding: 0 1rem;
+}
+
+/* Ranking Table */
+#ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+#ranking-table th, #ranking-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+#ranking-table th { color: var(--text-muted); font-weight: 600; text-transform: uppercase; font-size: 0.85rem; }
+#ranking-table tr:hover { background: rgba(255,255,255,0.02); }
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.badge-success { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+.badge-error { background: rgba(239, 68, 68, 0.2); color: var(--error); }
+
+/* Msgs */
+.msg { padding: 12px; border-radius: 8px; margin-top: 1rem; text-align: center; font-weight: 600; }
+.msg.success { background: rgba(16, 185, 129, 0.2); color: var(--success); border: 1px solid var(--success); }
+.msg.error { background: rgba(239, 68, 68, 0.2); color: var(--error); border: 1px solid var(--error); }
+
+.rules-card {
+  margin-top: 2rem;
+  background: rgba(0, 35, 102, 0.4);
+  border-color: rgba(0, 35, 102, 0.8);
+}
+.rules-card ul { padding-left: 1.5rem; margin-top: 1rem; }
+.rules-card li { margin-bottom: 0.5rem; color: #cbd5e1; }
+
+.past-match-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+.past-match-score { font-size: 1.2rem; font-weight: 800; letter-spacing: 2px; }

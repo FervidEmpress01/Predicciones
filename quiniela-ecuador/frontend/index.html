@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiniela La Tri 🇪🇨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div id="login-screen" class="login-screen">
+    <div class="glass-card login-card">
+      <div class="logo">🇪🇨</div>
+      <h1>Quiniela <span class="accent">La Tri</span></h1>
+      <p class="subtitle">Acierta el marcador exacto de los partidos de Ecuador</p>
+      <input type="text" id="login-name" placeholder="Tu nombre o apodo" class="input-text">
+      <button id="btn-login" class="btn btn-primary">Ingresar</button>
+      <div id="login-error" class="error-msg" style="display:none"></div>
+    </div>
+  </div>
+
+  <!-- MAIN APP -->
+  <div id="main-app" style="display:none">
+    <header id="main-header">
+      <div class="header-left">
+        <span class="logo-small">🇪🇨</span>
+        <h2>Quiniela <span class="accent">La Tri</span></h2>
+      </div>
+      <nav class="nav-tabs">
+        <button class="nav-btn active" data-tab="partido">Próximo Partido</button>
+        <button class="nav-btn" data-tab="ranking">Ranking</button>
+      </nav>
+      <div class="header-right">
+        <span id="user-badge" class="user-badge"></span>
+        <button id="btn-logout" class="btn btn-outline btn-sm">Salir</button>
+      </div>
+    </header>
+
+    <!-- TAB: PARTIDO ACTIVO -->
+    <section id="tab-partido" class="tab-content active">
+      <div class="glass-card match-card" id="active-match-container">
+        <h3>Próximo Partido</h3>
+        <p class="match-date" id="match-date">Cargando...</p>
+        
+        <div class="scoreboard">
+          <div class="team">
+            <div class="flag" id="flag-a"></div>
+            <div class="team-name" id="team-a-name">-</div>
+            <input type="number" id="score-a" min="0" max="15" class="score-input" placeholder="0">
+          </div>
+          <div class="vs">VS</div>
+          <div class="team">
+            <div class="flag" id="flag-b"></div>
+            <div class="team-name" id="team-b-name">-</div>
+            <input type="number" id="score-b" min="0" max="15" class="score-input" placeholder="0">
+          </div>
+        </div>
+
+        <button id="btn-save-score" class="btn btn-primary btn-large">Guardar Marcador</button>
+        <div id="save-msg" class="msg" style="display:none"></div>
+      </div>
+      
+      <div class="glass-card rules-card">
+        <h3>¿Cómo funciona?</h3>
+        <ul>
+          <li>Solo puedes predecir el <strong>marcador exacto</strong> del partido actual.</li>
+          <li>Si aciertas el resultado exacto, sumas <strong>1 Acierto Exacto</strong>.</li>
+          <li>Una vez que inicia el partido, ya no podrás modificar tu predicción.</li>
+          <li>¡Apoya a la selección y demuestra cuánto sabes!</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TAB: RANKING -->
+    <section id="tab-ranking" class="tab-content">
+      <div class="glass-card">
+        <h2>🏆 Ranking de Aciertos</h2>
+        <div id="ranking-container">Cargando tabla...</div>
+      </div>
+      
+      <div class="glass-card" style="margin-top: 2rem;">
+        <h3>Partidos Anteriores</h3>
+        <div id="past-matches-container"></div>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

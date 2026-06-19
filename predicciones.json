@@ -1,0 +1,775 @@
+[
+  {
+    "usuario": "Mauricio",
+    "grupos": {
+      "A": [
+        "Corea del Sur",
+        "Sudáfrica",
+        "México"
+      ],
+      "B": [
+        "Suiza",
+        "Canadá",
+        "Catar"
+      ],
+      "C": [
+        "Brasil",
+        "Marruecos",
+        "Escocia"
+      ],
+      "D": [
+        "Turquía",
+        "Estados Unidos",
+        "Australia"
+      ],
+      "E": [
+        "Alemania",
+        "Ecuador",
+        "Costa de Marfil"
+      ],
+      "F": [
+        "Países Bajos",
+        "Japón",
+        "Suecia"
+      ],
+      "G": [
+        "Egipto",
+        "Bélgica",
+        "Nueva Zelanda"
+      ],
+      "H": [
+        "España",
+        "Uruguay",
+        "Arabia Saudita"
+      ],
+      "I": [
+        "Francia",
+        "Noruega",
+        "Senegal"
+      ],
+      "J": [
+        "Argentina",
+        "Argelia",
+        "Austria"
+      ],
+      "K": [
+        "Portugal",
+        "Colombia",
+        "RD Congo"
+      ],
+      "L": [
+        "Inglaterra",
+        "Croacia",
+        "Ghana"
+      ]
+    },
+    "terceros": [
+      "México",
+      "Australia",
+      "Costa de Marfil",
+      "Suecia",
+      "Arabia Saudita",
+      "Senegal",
+      "RD Congo",
+      "Ghana"
+    ],
+    "terceros_grupos": [
+      "A",
+      "D",
+      "E",
+      "F",
+      "H",
+      "I",
+      "K",
+      "L"
+    ],
+    "dieciseisavos": [
+      "Alemania",
+      "Sudáfrica",
+      "Corea del Sur",
+      "Brasil",
+      "Costa de Marfil",
+      "Bélgica",
+      "Inglaterra",
+      "España",
+      "Francia",
+      "Ecuador",
+      "Turquía",
+      "Países Bajos",
+      "Senegal",
+      "Colombia",
+      "Portugal",
+      "Argentina"
+    ],
+    "octavos": [
+      "Alemania",
+      "Brasil",
+      "Costa de Marfil",
+      "España",
+      "Ecuador",
+      "Países Bajos",
+      "Colombia",
+      "Argentina"
+    ],
+    "cuartos": [
+      "Alemania",
+      "España",
+      "Ecuador",
+      "Argentina"
+    ],
+    "semis": [
+      "España",
+      "Ecuador"
+    ],
+    "final": [
+      "España",
+      "Ecuador"
+    ],
+    "campeon": [
+      "España"
+    ],
+    "tercero_puesto": "Argentina"
+  },
+  {
+    "usuario": "SebasBands",
+    "grupos": {
+      "A": [
+        "Corea del Sur",
+        "México",
+        "Sudáfrica"
+      ],
+      "B": [
+        "Suiza",
+        "Canadá",
+        "Catar"
+      ],
+      "C": [
+        "Brasil",
+        "Haití",
+        "Escocia"
+      ],
+      "D": [
+        "Estados Unidos",
+        "Australia",
+        "Turquía"
+      ],
+      "E": [
+        "Alemania",
+        "Ecuador",
+        "Curazao"
+      ],
+      "F": [
+        "Japón",
+        "Suecia",
+        "Países Bajos"
+      ],
+      "G": [
+        "Egipto",
+        "Irán",
+        "Bélgica"
+      ],
+      "H": [
+        "España",
+        "Uruguay",
+        "Cabo Verde"
+      ],
+      "I": [
+        "Francia",
+        "Noruega",
+        "Senegal"
+      ],
+      "J": [
+        "Argentina",
+        "Austria",
+        "Argelia"
+      ],
+      "K": [
+        "Colombia",
+        "RD Congo",
+        "Portugal"
+      ],
+      "L": [
+        "Panamá",
+        "Ghana",
+        "Inglaterra"
+      ]
+    },
+    "terceros": [
+      "Catar",
+      "Escocia",
+      "Países Bajos",
+      "Bélgica",
+      "Cabo Verde",
+      "Senegal",
+      "Argelia",
+      "Portugal"
+    ],
+    "terceros_grupos": [
+      "B",
+      "C",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K"
+    ],
+    "dieciseisavos": [
+      "Alemania",
+      "México",
+      "Corea del Sur",
+      "Brasil",
+      "Cabo Verde",
+      "Australia",
+      "Portugal",
+      "España",
+      "Países Bajos",
+      "Noruega",
+      "Estados Unidos",
+      "Japón",
+      "Suiza",
+      "RD Congo",
+      "Colombia",
+      "Argentina"
+    ],
+    "octavos": [
+      "Alemania",
+      "Corea del Sur",
+      "Australia",
+      "España",
+      "Argentina",
+      "Suiza",
+      "Japón",
+      "Países Bajos"
+    ],
+    "cuartos": [
+      "Corea del Sur",
+      "España",
+      "Japón",
+      "Suiza"
+    ],
+    "semis": [
+      "Japón",
+      "España"
+    ],
+    "final": [
+      "Japón",
+      "España"
+    ],
+    "campeon": [
+      "Japón"
+    ],
+    "tercero_puesto": "Corea del Sur"
+  },
+  {
+    "usuario": "Gero",
+    "grupos": {
+      "A": [
+        "Corea del Sur",
+        "México",
+        "Chequia"
+      ],
+      "B": [
+        "Suiza",
+        "Canadá",
+        "Bosnia y Herzegovina"
+      ],
+      "C": [
+        "Brasil",
+        "Marruecos",
+        "Escocia"
+      ],
+      "D": [
+        "Paraguay",
+        "Estados Unidos",
+        "Turquía"
+      ],
+      "E": [
+        "Alemania",
+        "Ecuador",
+        "Costa de Marfil"
+      ],
+      "F": [
+        "Países Bajos",
+        "Japón",
+        "Suecia"
+      ],
+      "G": [
+        "Bélgica",
+        "Egipto",
+        "Irán"
+      ],
+      "H": [
+        "España",
+        "Cabo Verde",
+        "Uruguay"
+      ],
+      "I": [
+        "Francia",
+        "Senegal",
+        "Noruega"
+      ],
+      "J": [
+        "Argentina",
+        "Argelia",
+        "Austria"
+      ],
+      "K": [
+        "Portugal",
+        "Colombia",
+        "Uzbekistán"
+      ],
+      "L": [
+        "Inglaterra",
+        "Croacia",
+        "Ghana"
+      ]
+    },
+    "terceros": [
+      "Chequia",
+      "Escocia",
+      "Turquía",
+      "Costa de Marfil",
+      "Suecia",
+      "Uruguay",
+      "Noruega",
+      "Austria"
+    ],
+    "terceros_grupos": [
+      "A",
+      "C",
+      "D",
+      "E",
+      "F",
+      "H",
+      "I",
+      "J"
+    ],
+    "dieciseisavos": [
+      "Alemania",
+      "Canadá",
+      "Costa de Marfil",
+      "Brasil",
+      "Bélgica",
+      "Estados Unidos",
+      "Inglaterra",
+      "España",
+      "Argentina",
+      "Portugal",
+      "Colombia",
+      "Suiza",
+      "Marruecos",
+      "Paraguay",
+      "Ecuador",
+      "Francia"
+    ],
+    "octavos": [
+      "Francia",
+      "Marruecos",
+      "Colombia",
+      "Argentina",
+      "España",
+      "Bélgica",
+      "Brasil",
+      "Alemania"
+    ],
+    "cuartos": [
+      "Brasil",
+      "España",
+      "Argentina",
+      "Francia"
+    ],
+    "semis": [
+      "Francia",
+      "España"
+    ],
+    "final": [
+      "Francia",
+      "España"
+    ],
+    "campeon": [
+      "Francia"
+    ],
+    "tercero_puesto": "Argentina"
+  },
+  {
+    "usuario": "Makoto",
+    "grupos": {
+      "A": [
+        "México",
+        "Chequia",
+        "Corea del Sur"
+      ],
+      "B": [
+        "Suiza",
+        "Bosnia y Herzegovina",
+        "Canadá"
+      ],
+      "C": [
+        "Brasil",
+        "Marruecos",
+        "Escocia"
+      ],
+      "D": [
+        "Turquía",
+        "Paraguay",
+        "Estados Unidos"
+      ],
+      "E": [
+        "Ecuador",
+        "Alemania",
+        "Costa de Marfil"
+      ],
+      "F": [
+        "Países Bajos",
+        "Japón",
+        "Suecia"
+      ],
+      "G": [
+        "Bélgica",
+        "Egipto",
+        "Irán"
+      ],
+      "H": [
+        "España",
+        "Uruguay",
+        "Arabia Saudita"
+      ],
+      "I": [
+        "Francia",
+        "Noruega",
+        "Senegal"
+      ],
+      "J": [
+        "Argentina",
+        "Austria",
+        "Argelia"
+      ],
+      "K": [
+        "Portugal",
+        "Colombia",
+        "RD Congo"
+      ],
+      "L": [
+        "Inglaterra",
+        "Croacia",
+        "Ghana"
+      ]
+    },
+    "terceros": [
+      "Escocia",
+      "Estados Unidos",
+      "Costa de Marfil",
+      "Suecia",
+      "Senegal",
+      "Argelia",
+      "RD Congo",
+      "Ghana"
+    ],
+    "terceros_grupos": [
+      "C",
+      "D",
+      "E",
+      "F",
+      "I",
+      "J",
+      "K",
+      "L"
+    ],
+    "dieciseisavos": [
+      "Ecuador",
+      "Chequia",
+      "Costa de Marfil",
+      "Brasil",
+      "Paraguay",
+      "Inglaterra",
+      "España",
+      "Senegal",
+      "Francia",
+      "Turquía",
+      "Países Bajos",
+      "Suiza",
+      "Colombia",
+      "Portugal",
+      "Argentina",
+      "Alemania"
+    ],
+    "octavos": [
+      "Ecuador",
+      "Brasil",
+      "España",
+      "Paraguay",
+      "Francia",
+      "Países Bajos",
+      "Colombia",
+      "Argentina"
+    ],
+    "cuartos": [
+      "España",
+      "Brasil",
+      "Argentina",
+      "Francia"
+    ],
+    "semis": [
+      "España",
+      "Francia"
+    ],
+    "final": [
+      "España",
+      "Francia"
+    ],
+    "campeon": [
+      "España"
+    ],
+    "tercero_puesto": "Argentina"
+  },
+  {
+    "usuario": "David",
+    "grupos": {
+      "A": [
+        "México",
+        "Corea del Sur",
+        "Chequia"
+      ],
+      "B": [
+        "Suiza",
+        "Bosnia y Herzegovina",
+        "Canadá"
+      ],
+      "C": [
+        "Brasil",
+        "Marruecos",
+        "Escocia"
+      ],
+      "D": [
+        "Turquía",
+        "Estados Unidos",
+        "Paraguay"
+      ],
+      "E": [
+        "Alemania",
+        "Ecuador",
+        "Costa de Marfil"
+      ],
+      "F": [
+        "Países Bajos",
+        "Japón",
+        "Suecia"
+      ],
+      "G": [
+        "Bélgica",
+        "Egipto",
+        "Irán"
+      ],
+      "H": [
+        "España",
+        "Uruguay",
+        "Arabia Saudita"
+      ],
+      "I": [
+        "Francia",
+        "Noruega",
+        "Senegal"
+      ],
+      "J": [
+        "Argentina",
+        "Argelia",
+        "Austria"
+      ],
+      "K": [
+        "Portugal",
+        "Colombia",
+        "RD Congo"
+      ],
+      "L": [
+        "Inglaterra",
+        "Croacia",
+        "Ghana"
+      ]
+    },
+    "terceros": [
+      "Chequia",
+      "Escocia",
+      "Paraguay",
+      "Costa de Marfil",
+      "Irán",
+      "Senegal",
+      "Austria",
+      "Ghana"
+    ],
+    "terceros_grupos": [
+      "A",
+      "C",
+      "D",
+      "E",
+      "G",
+      "I",
+      "J",
+      "L"
+    ],
+    "dieciseisavos": [
+      "Alemania",
+      "Brasil",
+      "Inglaterra",
+      "España",
+      "Francia",
+      "Ecuador",
+      "Turquía",
+      "Países Bajos",
+      "Colombia",
+      "Suiza",
+      "Portugal",
+      "Argentina",
+      "Estados Unidos",
+      "México",
+      "Bosnia y Herzegovina",
+      "Senegal"
+    ],
+    "octavos": [
+      "Alemania",
+      "Brasil",
+      "Senegal",
+      "España",
+      "Países Bajos",
+      "Colombia",
+      "Argentina",
+      "Francia"
+    ],
+    "cuartos": [
+      "España",
+      "Brasil",
+      "Argentina",
+      "Francia"
+    ],
+    "semis": [
+      "España",
+      "Francia"
+    ],
+    "final": [
+      "España",
+      "Francia"
+    ],
+    "campeon": [
+      "España"
+    ],
+    "tercero_puesto": "Argentina"
+  },
+  {
+    "usuario": "XRODOAN",
+    "grupos": {
+      "A": [
+        "México",
+        "Chequia"
+      ],
+      "B": [
+        "Suiza",
+        "Canadá"
+      ],
+      "C": [
+        "Brasil",
+        "Marruecos"
+      ],
+      "D": [
+        "Estados Unidos",
+        "Turquía"
+      ],
+      "E": [
+        "Alemania",
+        "Ecuador"
+      ],
+      "F": [
+        "Países Bajos",
+        "Japón"
+      ],
+      "G": [
+        "Bélgica",
+        "Egipto"
+      ],
+      "H": [
+        "España",
+        "Uruguay"
+      ],
+      "I": [
+        "Francia",
+        "Noruega"
+      ],
+      "J": [
+        "Argentina",
+        "Austria"
+      ],
+      "K": [
+        "Portugal",
+        "Colombia"
+      ],
+      "L": [
+        "Inglaterra",
+        "Croacia"
+      ]
+    },
+    "terceros": [
+      "Sudáfrica",
+      "Paraguay",
+      "Curazao",
+      "Suecia",
+      "Cabo Verde",
+      "Noruega",
+      "Jordania",
+      "Croacia"
+    ],
+    "terceros_grupos": [
+      "A",
+      "D",
+      "E",
+      "F",
+      "H",
+      "I",
+      "J",
+      "L"
+    ],
+    "dieciseisavos": [
+      "Alemania",
+      "Chequia",
+      "México",
+      "Brasil",
+      "Bélgica",
+      "Turquía",
+      "Inglaterra",
+      "España",
+      "Francia",
+      "Ecuador",
+      "Estados Unidos",
+      "Países Bajos",
+      "Suiza",
+      "Colombia",
+      "Portugal",
+      "Argentina"
+    ],
+    "octavos": [
+      "Alemania",
+      "Brasil",
+      "Bélgica",
+      "España",
+      "Francia",
+      "Países Bajos",
+      "Colombia",
+      "Portugal"
+    ],
+    "cuartos": [
+      "Brasil",
+      "España",
+      "Francia",
+      "Portugal"
+    ],
+    "semis": [
+      "Portugal",
+      "Brasil"
+    ],
+    "final": [
+      "Portugal",
+      "Brasil"
+    ],
+    "campeon": [
+      "Portugal"
+    ]
+  }
+]
