@@ -1,5 +1,5 @@
 /* ===== Mundial 2026 – Predicciones + Bracket Interactivo ===== */
-const API = '';
+const API = 'https://predicciones-76dd.onrender.com';
 const GROUPS = 'ABCDEFGHIJKL'.split('');
 
 let currentUser = null;     // logged-in username
